@@ -1,8 +1,8 @@
-def my_each(array)
-  counter = 0
-  while counter < array.length
-    yield(array[counter])
-    counter += 1
+def my_each(collection)
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i += 1
   end
-  array
+  collection
 end
